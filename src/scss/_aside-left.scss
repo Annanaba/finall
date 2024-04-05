@@ -1,0 +1,114 @@
+.aside-left{
+ display: none;
+
+ &__lol{
+   z-index: 100;
+   color: #1B1C21; 
+   font-size: 16px; 
+   font-weight: 500;
+   box-sizing: border-box;
+   padding: 24px;
+   display: flex;
+   flex-direction: column;
+   width: 320px;
+   height: 100vh;
+   background-color: #FFFFFF;
+  }
+
+ &__nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 28px;
+   }
+
+ &__close{
+   display: none;
+   background: #ff3e79 url(/src/img/ic/ic/clous.svg) no-repeat center center;
+  }
+
+ &__search {
+   background: #ff3e79 url(/src/img/ic/ic/searsh.svg) no-repeat center
+   center;
+  }
+
+ &__item{
+   margin-bottom: 24px;
+  }
+
+ &__main{
+   flex: 1; 
+   overflow-y: auto; 
+   min-height: 100px;
+  }
+
+ &__item:hover::before{
+   content: "";
+   position: absolute;
+   width: 4px;
+   height: 22px;
+   left: 1px;
+   border-radius: 2px;
+   background: #41f6d7;
+  }
+
+ &__item:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 22px;
+    left: 1px;
+    border-radius: 2px;
+    background: #41f6d7;
+     
+  }
+
+  &__footer {
+    position: relative;
+    margin-top: 16px; 
+    display: flex; 
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  &__footer-nav {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__phone{
+    font-weight: 800;
+  }
+
+  &__mail {
+    color: rgb(27, 28, 33);
+    font-family: "TT Lakes Medium", serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+  }
+    
+  &__lang {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1400px) {
+      position: fixed;
+      display: block!important;
+        &__close{
+          display: none!important;
+         }
+  }
+
+  @media screen and (max-width: 1399px){
+        box-shadow: 16px 0px 52px rgba(14.49, 23.84, 80.24, 0.20);
+      }
+
+
+}
+
+
+
+

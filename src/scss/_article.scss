@@ -1,0 +1,80 @@
+.article {
+  padding-right: 32PX;
+    background-color:#F8F8F8 ;
+    &__wrapper {
+      position: relative;
+      max-height: 110px;
+      overflow: hidden;
+      padding: 0 25px 0 25px;
+      transition: max-height 0.3s ease-in-out;
+    }
+    &__text {
+      font-family: "TT Lakes Light", serif;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      color: #1B1C21;
+      margin-bottom: 10px;
+    }
+    &__button {
+        background-color:#F8F8F8 ;
+        display: block;
+        margin: 0 0 20px 40px ;
+        border: none;
+        text-align: right;
+        font-size: 16px;
+    }
+    &__transparent-block{
+      max-width: 760px;
+      height: 10px;
+      background-image:linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F8F8F8 100%);
+      transform-origin: left top;
+      position: relative; 
+      bottom: 10px;
+      left: 0;
+    }
+    &__button::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: url(../../src/img/ic/burron.svg) no-repeat center center;
+      left: 20px;
+      transform: var(--rotate, none); 
+      transition: transform 0.3s ease;
+      @media screen and (min-width: 1400px){
+        left: 340px;
+      }
+    }
+    &__button.rotate-icon::before {
+      transform: rotate(180deg);
+    }
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+  
+  }
+  @media screen and (min-width: 768px) {
+    .article{
+      display: flex;
+      &__wrapper{
+        max-height: 130px;
+      }
+      &__img {
+        max-width: 360px;
+        max-height: 208px;
+      }
+    }
+  }
+  @media screen and (min-width: 1121px) {
+    .article__img{
+      max-width: 500px;
+    }
+    .nav__title{
+      padding-top: 40px;
+    }
+  }
+  .dropdown:hover{
+    background: #f6f6f6;
+  }

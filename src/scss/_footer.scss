@@ -1,0 +1,31 @@
+.footer {
+margin-top: auto;
+  padding: 30px 10px 32px;
+  background: rgb(248, 248, 248);
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__text {
+    color: rgb(126, 126, 130);
+    font-family: "TT Lakes Light", serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+  }
+  @media (min-width: 768px){
+    &__container{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+    &__text{
+        text-align: left;
+    }
+}
+@media screen and (min-width: 1400px){
+  margin-left: 330px;
+}
+}

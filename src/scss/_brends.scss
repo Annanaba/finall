@@ -1,0 +1,134 @@
+.brends{
+    &__container{
+        padding: 24px  24px 24px 24px;
+    }
+    &__swiper{
+        min-height: 120px;
+    }
+    &__title{
+        background-image: linear-gradient(270deg, #fff 0%, #f8f8f8 98.61%);
+        margin-bottom: 14px;
+        width: 102%;
+        font-family: "TT Lakes Light", serif;
+        padding: 16px 0 12px 0;
+        color: #7e7e82;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+        border-top: 1px solid #D9FFF5;
+        border-radius: 1px;
+    }
+    &__item{
+        display: flex;
+        flex: 0 0 180px;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        border: 1px solid #eaeaea;
+        padding: 20px 16px;
+        border-radius: 6px;
+        background: #ffffff;
+    }
+    &__dropdown{
+        box-sizing: border-box;
+        width: 40px; 
+        height: 40px; 
+        border-radius: 50%; 
+        border: 2px #FF3E79 solid;
+        display: flex!important;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+    &__arrow{
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid #FF3E79!important;
+        border-right: 2px solid #FF3E79!important;
+        margin: 16px 0 0 10px;
+        transform: rotate(45deg);
+        display: inline-block!important;
+        transition: 1s;
+        margin: -1px 0 0 -1px;
+    }
+  
+    &__description_btn{
+        display: none;
+        font-size: 16px;
+    }
+
+    @media (min-width: 768px){
+
+    &__description_btn{
+        background-color:#F8F8F8 ;
+        display: block;
+        margin: 10px 0 20px 20px ;
+        border: none;
+        text-align: right;
+    }
+    &__description_btn::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: url(../../src/img/ic/burron.svg) no-repeat center center;
+        left: 20px;
+        transform: var(--rotate, none); 
+        transition: transform 0.3s ease; 
+        @media screen and (min-width: 1400px){
+            left: 340px;
+          }
+    }
+
+    &__description_btn.rotate-icon::before {
+        transform: rotate(180deg);
+    }
+
+    &__list {
+        max-height: 180px;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding-bottom: 10px;
+    }
+    
+    &__item {
+        flex-basis: 25%; 
+        flex-grow: 1; 
+    }
+    
+
+    }
+    @media screen and (min-width: 1426px) {
+        &__list {
+            max-height: 190px;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding-bottom: 10px;
+        }
+        
+        &__item {
+            flex-basis: 20%;
+            flex-grow: 1; 
+        }
+        
+}
+}
+
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    background: #DDDDDD; 
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.swiper-pagination-bullet-active{
+    background: #B5B6BC;
+}
+
+

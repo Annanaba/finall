@@ -1,0 +1,107 @@
+.feedback{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  width: 100%;
+  background-color: #FFFFFF;
+  &__container{
+    margin-left: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   background-color:#FFFFFF;
+   width: 440px;
+   height: 100vh;
+   padding: 32px;
+   box-sizing: border-box;
+
+   }
+   &__cross{
+   background: #ff3e79 url(/src/img/ic/ic/clous.svg) no-repeat center center;
+   position: absolute;
+   right: 460px;
+   top: 28px;
+   } 
+   &__title{ 
+   color: #1B1C21; 
+   font-size: 24px; 
+   font-family: 'TT Lakes'; 
+   font-weight: 700;
+   margin-top: 0;
+   }
+   &__title::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    right: 436px;
+    border-radius: 2px;
+    background: #41f6d7;
+   }
+   
+
+   &__input{  
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    height: 48px;
+    color: #B5B6BC; 
+    font-size: 16px; 
+    font-family: 'TT Lakes';
+    padding-left: 16px;
+    width: 376px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+   } 
+
+   &__desc{ 
+    margin: 16px 0 16px 0;
+   }
+
+  &__text{
+    color: #B5B6BC; 
+    font-size: 16px; 
+    font-family: TT Lakes; 
+    font-weight: 500; 
+    line-height: 24px
+  }
+     
+  &__link{
+    color:#FF3E79;
+     cursor: pointer;
+   }
+
+   @media screen and (max-width: 1399px){
+    box-shadow: 16px 0px 52px rgba(14.49, 23.84, 80.24, 0.20);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .feedback{
+    background-color: #FFFFFF;
+    width: 100%;
+    &__container{
+      padding: 16px;
+      width: 100%;
+    }
+    &__cross{
+      position: static;
+      margin-top: 24px;
+      margin-bottom: 40px;
+  
+    }
+    &__input{  
+      width: 100%;
+    }
+    &__title::before{
+    
+      left: 1px;
+      
+     }
+     
+  }
+}
+
+.feedback-chat,
+.request-call { 
+  display: none;
+}
+

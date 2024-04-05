@@ -1,0 +1,48 @@
+.price-desktop{
+    display: none;
+    &__container{
+        padding: 0px 24px 24px 24px;
+    }
+    
+    &__items{
+        box-sizing: border-box;
+        background-color: #ffffff;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+   
+    &__wrapper-item{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        padding: 16px 16px 16px 16px;
+        align-items: center;
+        border-bottom: 1px solid #EAEAEA;
+        color: #1B1C21; 
+        font-size: 14px; 
+        font-family: TT Lakes; 
+        font-weight: 400; 
+        line-height: 18px;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        padding: 16px 16px 24px 24px;
+        align-items: center;
+        color: #7E7E82; 
+        font-size: 14px; 
+        font-family: TT Lakes; 
+        font-weight: 500; 
+        line-height: 16px;
+    }
+    &__btn{
+        margin-left: auto;
+    }
+}
+ @media screen and (min-width: 768px) {
+        .price-desktop{
+            display: block;
+        }
+      }
+

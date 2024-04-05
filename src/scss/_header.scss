@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+}
+.header {
+  padding: 18px 24px;
+  border-bottom: 1px solid #D9FFF5;
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav {
+    margin: 0 0 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+    border: none;
+  }
+  &__button:hover {
+    opacity: 0.7;
+  }
+  &__logo {
+    display: block;
+    height: 55px;
+    width: 104px;
+    background: url("../../src/img/logo.svg") no-repeat center center;
+  }
+}
+.burger {
+  background: #ff3e79 url(../../src/img/ic/icon.svg) no-repeat center center;
+}
+.call {
+  background: #ff3e79 url(../../src/img/ic/call.svg) no-repeat center center;
+}
+.chat {
+  background: #ff3e79 url(../../src/img/ic/chat.svg) no-repeat center center;
+}
+.profile {
+  background: #ff3e79 url(../../src/img/ic/prof.svg) no-repeat center
+    center;
+}
+.repair {
+  background: #ff3e79 url(../../src/img/repair.svg) no-repeat center center;
+}
+.check {
+  background: #ff3e79 url(../../src/img/ic/chek.svg) no-repeat center center;
+}
+.sticky::after {
+  content: "";
+  width: 4px;
+  height: 38px;
+  border-radius: 2px;
+  background: #eaeaea;
+  right: -12px;
+  top: 7px;
+}
+.sticky-right::after{
+  content: "";
+  width: 4px;
+  height: 38px;
+  border-radius: 2px;
+  background: #eaeaea;
+  right: -12px;
+  top: 7px;
+  margin-right: 20px;
+
+}
+@media (max-width: 767px) {
+  .media-768  {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 1400px) {
+  .header {
+      display: none;
+  }
+}

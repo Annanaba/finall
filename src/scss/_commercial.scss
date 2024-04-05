@@ -1,0 +1,24 @@
+.commercial-offer{
+    &__text{
+        color: #1B1C21; 
+        font-size: 14px; 
+        font-family: TT Lakes; 
+        font-weight: 400; 
+        line-height: 20px;
+        max-width: 420px;
+        margin-bottom: 16px;
+        text-align: left;
+    }
+    &__btn{
+        border: none;
+        background-color:#F8F8F8 ;
+        color: #1B1C21; 
+        font-size: 16px; 
+        font-family: TT Lakes; 
+        font-weight: 500; 
+        line-height: 24px;
+        padding: 0;
+        text-align: left;
+    }
+
+}
