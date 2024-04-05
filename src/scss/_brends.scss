@@ -98,12 +98,15 @@
         flex-basis: 25%; 
         flex-grow: 1; 
     }
+    &__link:hover{
+        color: #FF3E79;
+    }
     
 
     }
     @media screen and (min-width: 1426px) {
         &__list {
-            max-height: 190px;
+            max-height: 180px;
             overflow: hidden;
             display: flex;
             flex-wrap: wrap;
