@@ -1,5 +1,3 @@
-import ('./js/aside-left');
-import ('./js/texst.js');
-import ('./js/brends.js');
-import ('./js/technology.js');
-import ('./js/price.js');
+
+import { myVariable } from './js/brends.js';
+console.log(myVariable); 
