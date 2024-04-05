@@ -1,7 +1,5 @@
-
-import './scss/index.scss';
-import './js/aside-left';
-import './js/texst.js';
-import './js/brends.js';
-import './js/technology.js';
-import './js/price.js';
+import ('./js/aside-left');
+import ('./js/texst.js');
+import ('./js/brends.js');
+import ('./js/technology.js');
+import ('./js/price.js');
