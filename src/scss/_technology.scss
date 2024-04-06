@@ -19,6 +19,9 @@
     &__dropdown{
         align-self: flex-end;
     }
+    &__dropdown:hover {
+        opacity: 0.7;
+      }
 
     @media (min-width: 768px){
         &__list{
