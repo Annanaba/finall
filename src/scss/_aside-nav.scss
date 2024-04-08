@@ -1,6 +1,6 @@
 .nav {
     &__aside-container { 
-      padding: 0 25px 0 25px;
+      padding: 0 16px 0 16px;
     }
     &__wrapper {
         display: flex;
@@ -24,6 +24,7 @@
       left: -25px;
     }
     &__wrapper-button {
+       font-family: "TT Lakes Medium", serif;
         margin-left: auto;
         display: none;
     }
@@ -45,6 +46,7 @@
       flex-direction: row;
       align-items: center;
       gap: 16px;
+      margin-bottom:24px;
       &-item {
         font-family: "TT Lakes Light", serif;
         color: #7e7e82;
@@ -75,6 +77,12 @@
         &__list{
           overflow: hidden;
           flex-wrap: wrap; }
+    }
+
+    @media screen and (min-width: 768px) {
+      &__aside-container { 
+        padding: 0 24px 10px 24px
+      }
     }
  }
  

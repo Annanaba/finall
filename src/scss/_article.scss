@@ -1,11 +1,10 @@
 .article {
-  padding-right: 32PX;
     background-color:#F8F8F8 ;
     &__wrapper {
       position: relative;
       max-height: 110px;
       overflow: hidden;
-      padding: 0 25px 0 25px;
+      padding: 0 16px 0 16px;
       transition: max-height 0.3s ease-in-out;
     }
     &__text {
@@ -62,9 +61,14 @@
   }
   @media screen and (min-width: 768px) {
     .article{
+      padding: 0 24px;
       display: flex;
       &__wrapper{
         max-height: 130px;
+        padding: 0 16px 0 0;
+      }
+      &__button{
+        margin: 0 0 20px 20px;
       }
       &__img {
         max-width: 360px;

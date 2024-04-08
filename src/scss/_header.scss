@@ -2,7 +2,7 @@ body{
   margin: 0;
 }
 .header {
-  padding: 18px 24px;
+  padding: 18px 16px;
   border-bottom: 1px solid #D9FFF5;
   &__container{
     display: flex;
@@ -36,6 +36,9 @@ body{
     height: 55px;
     width: 104px;
     background: url("../../src/img/logo.svg") no-repeat center center;
+  }
+  @media (min-width: 768px){
+    padding: 20px 24px;
   }
 }
 .burger {

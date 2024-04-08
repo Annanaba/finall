@@ -1,6 +1,8 @@
 .aside-left{
  display: none;
-
+ position: fixed;
+ top: 0;
+ z-index: 52; 
  &__lol{
    z-index: 100;
    color: #1B1C21; 
@@ -78,6 +80,7 @@
 
   &__phone{
     font-weight: 800;
+    font-family: "TT Lakes Bold", serif;
   }
 
   &__mail {
