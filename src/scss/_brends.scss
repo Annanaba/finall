@@ -71,23 +71,20 @@
         text-align: right;
         cursor: pointer;
         font-family: "TT Lakes Medium", serif;
+        position: relative;
     }
     &__description_btn:hover{
         color: #FF3E79;
-  
-      }
+    }
     &__description_btn::before {
         content: "";
         position: absolute;
         width: 16px;
         height: 16px;
         background: url(../../src/img/ic/burron.svg) no-repeat center center;
-        left: 20px;
+        left: -20px;
         transform: var(--rotate, none); 
         transition: transform 0.3s ease; 
-        @media screen and (min-width: 1400px){
-            left: 445px;
-          }
     }
 
     &__description_btn.rotate-icon::before {
