@@ -4,6 +4,7 @@
     }
     &__swiper{
         min-height: 200px;
+        padding-bottom: 10px;
     }
     &__item{
         background-color: #ffffff;
@@ -28,7 +29,7 @@
             padding: 0 24px 24px 24px;
         }
         &__list{
-            max-height: 170px;
+            max-height: 160px;
             overflow: hidden;
             display: flex;
             gap: 25px;
