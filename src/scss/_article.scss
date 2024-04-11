@@ -23,6 +23,7 @@
         text-align: right;
         font-size: 16px;
         cursor: pointer;
+        font-family: "TT Lakes Medium", serif;
     }
     &__button:hover{
       color: #FF3E79;
@@ -47,7 +48,7 @@
       transform: var(--rotate, none); 
       transition: transform 0.3s ease;
       @media screen and (min-width: 1400px){
-        left: 340px;
+        left: 445px;
       }
     }
     &__button.rotate-icon::before {

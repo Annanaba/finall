@@ -37,7 +37,7 @@
     }
     &__btn-text{
         font-size: 12px; 
-        font-family: TT Lakes; 
+        font-family: "TT Lakes Medium", serif;
         font-weight: 700;
     }
     &__arrow{
@@ -50,6 +50,7 @@
         align-items: center;
     }
 }
+
 @media (min-width: 768px){
     .price{
         display: none;

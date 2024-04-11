@@ -58,7 +58,6 @@ buttonReadMore.addEventListener('click', () => {
   });
 
 
-// export const myVariable = 'Hello from brends.js';
 
 
 

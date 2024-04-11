@@ -17,7 +17,6 @@ body{
     font-weight: 500;
     line-height: 24px;
     font-size: 16px;
-    max-width: 1440px;
 }
 .header{
     background-color: #FFFFFF;
@@ -29,12 +28,16 @@ h2{
     margin: 0;
 }
 main{
-    margin-left: 320px;
+    margin-left: 0;
     
   }
-  @media (max-width: 1400px) {
+  @media (min-width: 1400px) {
     main {
-        margin-left: 0;
+        margin-left: 320px;
+    }
+    body{
+        width: 1440px; 
+        margin: 0 auto;
     }
   }
 a {
@@ -51,6 +54,38 @@ ul {
 p{
     margin: 0;
 }
+.btn-arrow{
+    width:119px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #FF3E79;
+    color: #FFFFFF;
+    border: none;
+}
+.btn-arrow-text{
+    font-size: 12px; 
+    font-family: "TT Lakes Medium", serif;
+    font-weight: 700;
+}
+.bottom-round{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+    border: none;
+    cursor: pointer;
+  }
+  .bottom-round:hover {
+    opacity: 0.7;
+  }
+  .logo{
+    display: block;
+      height: 55px;
+      width: 104px;
+      background: url("../../src/img/logo.svg") no-repeat center center; 
+    }
 
+  
 
   

@@ -35,7 +35,7 @@ openCall.forEach(button => {
         document.body.style.overflow = 'hidden';
         header.style.opacity ='0.04';
         main.style.opacity ='0.04';
-        leftMenu.style.display ='none';
+        leftMenu.style.opacity ='0.01';
     });
 });
 
@@ -44,6 +44,7 @@ closeCall.addEventListener('click', function(){
     document.body.style.overflow = '';
     header.style.opacity = '';
     main.style.opacity = '';
+    leftMenu.style.opacity ='';
 });
 
 openChat.forEach(button =>{
@@ -52,7 +53,7 @@ openChat.forEach(button =>{
         document.body.style.overflow = 'hidden';
         header.style.opacity ='0.04';
         main.style.opacity ='0.04';
-        leftMenu.style.display ='none';
+        leftMenu.style.opacity ='0.01';
     })
 })
 closeChat.addEventListener('click', function(){
@@ -60,6 +61,7 @@ closeChat.addEventListener('click', function(){
     document.body.style.overflow = '';
     header.style.opacity = '';
     main.style.opacity = '';
+    leftMenu.style.opacity ='';
 })
 
 
