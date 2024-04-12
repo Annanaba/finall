@@ -9,6 +9,88 @@
 </head>
 <body>
   <div class="layout">
+    <div class="request-call feedback" id="feedback" style="z-index: 99;" >
+      <div class="request-call__wrapper feedback__wrapper">
+        <div class="request-call__container feedback__container">
+          <button class="feedback__cross bottom-round close-call"></button>
+          <div class="request-call__header feedback__header">
+            <h3 class="request-call__title feedback__title">Заказать звонок</h3>
+          </div>
+          <div class="request-call__main feedback__main">
+            <label class="request-call__label feedback__label">
+              <input
+                  class="request-call__input feedback__input"
+                  type="text"
+                  placeholder="Телефон"/>
+            </label>
+            <div class="feedback__desc"> 
+              <p class="feedback__text">
+                Нажимая “отправить”, вы даете согласие на
+                <a href="#" class="feedback__link"
+                >обработку персональных данных</a
+                >
+                и соглашаетесь с нашей
+                <a href="#" class="feedback__link"
+                >политикой конфиденциальности</a
+                >
+              </p>
+            </div>
+            <button class="price__btn feedback__btn" >
+              <span class="price__btn-text" title="Нажмите, чтобы отправить">Отправить</span>
+              <div class="brends__arrow price__arrow"></div>
+           </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feedback feedback-chat" id="feedback-chat" style="z-index: 100;">
+      <div class="feedback-chat__wrapper feedback__wrapper">
+        <div class="feedback-chat__container feedback__container">
+          <button class="feedback__cross bottom-round feedback-chat-close"></button>
+          <div class="feedback-chat__header feedback__header">
+            <h3 class="feedback-chat__title feedback__title">Обратная связь</h3>
+          </div>
+          <div class="feedback-chat__main feedback__main">
+            <label class="feedback-chat__label feedback__label">
+              <input
+                  class="feedback-chat__input feedback__input"
+                  type="text"
+                  placeholder="Телефон"/>
+            </label>
+            <label class="feedback__label">
+              <input
+                  class="feedback__input"
+                  type="text"
+                  placeholder="Электронная почта"
+              />
+            </label>
+            <label class="feedback__label">
+              <input
+                  class="feedback__input feedback__input_text"
+                  type="text"
+                  placeholder="Сообщение"
+              />
+            </label>
+            <div class="feedback__desc">
+              <p class="feedback__text">
+                Нажимая “отправить”, вы даете согласие на
+                <a href="#" class="feedback__link"
+                >обработку персональных данных</a
+                >
+                и соглашаетесь с нашей
+                <a href="#" class="feedback__link"
+                >политикой конфиденциальности</a
+                >
+              </p>
+            </div>
+            <button class="feedback__btn btn-arrow" >
+              <span class="price__btn-text" title="Нажмите, чтобы отправить">Отправить</span>
+              <div class="brends__arrow price__arrow"></div>
+           </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <aside class="aside-left" id="aside-left">
       <div class="aside-left__lol ">
           <div class="aside-left__header">
@@ -89,88 +171,6 @@
          </nav>
       </div>
      </header>
-     <div class="request-call feedback" id="feedback">
-      <div class="request-call__wrapper feedback__wrapper">
-        <div class="request-call__container feedback__container">
-          <button class="feedback__cross bottom-round close-call"></button>
-          <div class="request-call__header feedback__header">
-            <h3 class="request-call__title feedback__title">Заказать звонок</h3>
-          </div>
-          <div class="request-call__main feedback__main">
-            <label class="request-call__label feedback__label">
-              <input
-                  class="request-call__input feedback__input"
-                  type="text"
-                  placeholder="Телефон"/>
-            </label>
-            <div class="feedback__desc"> 
-              <p class="feedback__text">
-                Нажимая “отправить”, вы даете согласие на
-                <a href="#" class="feedback__link"
-                >обработку персональных данных</a
-                >
-                и соглашаетесь с нашей
-                <a href="#" class="feedback__link"
-                >политикой конфиденциальности</a
-                >
-              </p>
-            </div>
-            <button class="price__btn feedback__btn" >
-              <span class="price__btn-text" title="Нажмите, чтобы отправить">Отправить</span>
-              <div class="brends__arrow price__arrow"></div>
-           </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="feedback feedback-chat" id="feedback-chat">
-      <div class="feedback-chat__wrapper feedback__wrapper">
-        <button class="feedback__cross bottom-round feedback-chat-close"></button>
-        <div class="feedback-chat__container feedback__container">
-          <div class="feedback-chat__header feedback__header">
-            <h3 class="feedback-chat__title feedback__title">Обратная связь</h3>
-          </div>
-          <div class="feedback-chat__main feedback__main">
-            <label class="feedback-chat__label feedback__label">
-              <input
-                  class="feedback-chat__input feedback__input"
-                  type="text"
-                  placeholder="Телефон"/>
-            </label>
-            <label class="feedback__label">
-              <input
-                  class="feedback__input"
-                  type="text"
-                  placeholder="Электронная почта"
-              />
-            </label>
-            <label class="feedback__label">
-              <input
-                  class="feedback__input feedback__input_text"
-                  type="text"
-                  placeholder="Сообщение"
-              />
-            </label>
-            <div class="feedback__desc">
-              <p class="feedback__text">
-                Нажимая “отправить”, вы даете согласие на
-                <a href="#" class="feedback__link"
-                >обработку персональных данных</a
-                >
-                и соглашаетесь с нашей
-                <a href="#" class="feedback__link"
-                >политикой конфиденциальности</a
-                >
-              </p>
-            </div>
-            <button class="feedback__btn btn-arrow" >
-              <span class="price__btn-text" title="Нажмите, чтобы отправить">Отправить</span>
-              <div class="brends__arrow price__arrow"></div>
-           </button>
-          </div>
-        </div>
-      </div>
-    </div>
      <main class="main">
       <div class="main__aside-nav">
       <nav class="nav">
