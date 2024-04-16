@@ -67,7 +67,7 @@ p{
     font-family: "TT Lakes Medium", serif;
     font-weight: 700;
 }
-.bottom-round{
+.bottom{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -76,15 +76,44 @@ p{
     border: none;
     cursor: pointer;
   }
-  .bottom-round:hover {
+.bottom:hover {
     opacity: 0.7;
-  }
-  .logo{
+}
+
+.logo{
     display: block;
-      height: 55px;
-      width: 104px;
-      background: url("../../src/img/logo.svg") no-repeat center center; 
-    }
+    height: 55px;
+    width: 104px;
+    background: url("../../src/img/logo.svg") no-repeat center center; 
+}
+
+.bottom-burger {
+  background: #ff3e79 url(../../src/img/ic/icon.svg) no-repeat center center;
+}
+.bottom-call {
+  background: #ff3e79 url(../../src/img/ic/call.svg) no-repeat center center;
+}
+.bottom-chat {
+  background: #ff3e79 url(../../src/img/ic/chat.svg) no-repeat center center;
+}
+.bottom-profile {
+  background: #ff3e79 url(../../src/img/ic/prof.svg) no-repeat center
+    center;
+}
+.bottom-repair {
+  background: #ff3e79 url(../../src/img/repair.svg) no-repeat center center;
+}
+.bottom-check {
+  background: #ff3e79 url(../../src/img/ic/chek.svg) no-repeat center center;
+}
+.bottom-search {
+  background: #ff3e79 url(/src/img/ic/ic/searsh.svg) no-repeat center
+  center;
+ }
+ .bottom-close{
+  display: none;
+  background: #ff3e79 url(/src/img/ic/ic/clous.svg) no-repeat center center;
+ }
 
   
 

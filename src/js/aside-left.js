@@ -1,12 +1,12 @@
-const openMenuButton = document.querySelector('.burger');
+const openMenuButton = document.querySelector('.bottom-burger');
 const leftMenu = document.querySelector('.aside-left');
-const closeMenuButton = document.querySelector('.aside-left__close');
-const openCall = document.querySelectorAll('.call-mobile');
+const closeMenuButton = document.querySelector('.bottom-close');
+const openCall = document.querySelectorAll('.bottom-call');
 const closeCall = document.querySelector('.close-call');
 const feedbackCall = document.querySelector('.request-call');
-const openChat = document.querySelectorAll('.chat-mobile')
+const openChat = document.querySelectorAll('.bottom-chat')
 const feedbackChat = document.querySelector('.feedback-chat')
-const closeChat = document.querySelector('.feedback-chat-close')
+const closeChat = document.querySelector('.close-chat')
 const header = document.querySelector('.header')
 const main = document.querySelector('.main')
 

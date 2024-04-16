@@ -3,7 +3,7 @@
  position: fixed;
  top: 0;
  z-index: 52; 
- &__lol{
+ &__container{
    z-index: 100;
    color: #1B1C21; 
    font-size: 16px; 
@@ -23,16 +23,6 @@
    align-items: center;
    margin-bottom: 28px;
    }
-
- &__close{
-   display: none;
-   background: #ff3e79 url(/src/img/ic/ic/clous.svg) no-repeat center center;
-  }
-
- &__search {
-   background: #ff3e79 url(/src/img/ic/ic/searsh.svg) no-repeat center
-   center;
-  }
 
  &__item{
    margin-bottom: 24px;
@@ -101,7 +91,7 @@
   @media screen and (min-width: 1400px) {
       position: fixed;
       display: block!important;
-        &__close{
+        &__bottom-close{
           display: none!important;
          }
   }

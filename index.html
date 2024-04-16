@@ -15,7 +15,7 @@
     <div class="request-call feedback" id="feedback" style="z-index: 99;" >
       <div class="request-call__wrapper feedback__wrapper">
         <div class="request-call__container feedback__container">
-          <button class="feedback__cross bottom-round close-call"></button>
+          <button class="bottom feedback__bottom-cross close-call"></button>
           <div class="request-call__header feedback__header">
             <h3 class="request-call__title feedback__title">Заказать звонок</h3>
           </div>
@@ -49,7 +49,7 @@
     <div class="feedback feedback-chat" id="feedback-chat" style="z-index: 100;">
       <div class="feedback-chat__wrapper feedback__wrapper">
         <div class="feedback-chat__container feedback__container">
-          <button class="feedback__cross bottom-round feedback-chat-close"></button>
+          <button class="bottom feedback__bottom-cross close-chat"></button>
           <div class="feedback-chat__header feedback__header">
             <h3 class="feedback-chat__title feedback__title">Обратная связь</h3>
           </div>
@@ -95,12 +95,12 @@
       </div>
     </div>
     <aside class="aside-left" id="aside-left">
-      <div class="aside-left__lol ">
+      <div class="aside-left__container">
           <div class="aside-left__header">
             <nav class="aside-left__nav">
-              <button class="aside-left__close bottom-round" title="Нажмите, чтобы закрыть"></button>
-              <a href="#" class="aside-left__logo logo"></a>
-              <button class="aside-left__search bottom-round" title="Нажмите, чтобы открыть меню"></button>
+              <button class="bottom bottom-close aside-left__bottom-close" title="Нажмите, чтобы закрыть"></button>
+              <a href="#" class="logo aside-left__logo"></a>
+              <button class="bottom bottom-search" title="Нажмите, чтобы открыть меню"></button>
             </nav>
           </div>
           <div class="aside-left__main">
@@ -137,9 +137,9 @@
           </div>
           <div class="aside-left__footer ">
             <nav class="aside-left__footer-nav">
-              <button class="bottom-round call call-mobile" title="Оставить заявку"></button>
-              <button class="bottom-round chat chat-mobile" title="Окрыть чат"></button>
-              <button class="bottom-round profile" title="Открыть в профиль"></button>
+              <button class="bottom bottom-call" title="Оставить заявку"></button>
+              <button class="bottom bottom-chat" title="Окрыть чат"></button>
+              <button class="bottom bottom-profile" title="Открыть в профиль"></button>
             </nav>
             <a href="mailto:mail@cps.com" class="aside-left__mail"
             >mail@cps.com</a
@@ -157,25 +157,25 @@
     </aside>
     <header class="header">
       <div class="header__container">
-          <div class="header__wrapper sticky">
-            <button class="header__button burger bottom-round"></button>
-            <a href="#" class="header__logo logo"></a>
+          <div class="header__wrapper divider">
+            <button class="bottom bottom-burger"></button>
+            <a href="#" class="logo header__logo"></a>
           </div>
           <nav class="header__nav">
-          <div class="header__wrapper media-768 sticky-right">
-            <button class="header__button call-tablet call-mobile bottom-round call"></button>
-            <button class="header__button chat-tablet chat-mobile bottom-round chat"></button>
-            <button class="header__button profile bottom-round"></button>
+          <div class="header__wrapper media-768 divider-right">
+            <button class="bottom bottom-call"></button>
+            <button class="bottom bottom-chat"></button>
+            <button class="bottom bottom-profile"></button>
           </div>
           <div class="header__wrapper">
-            <button class="header__button bottom-round repair"></button>
-            <button class="header__button bottom-round check"></button>
+            <button class="bottom bottom-repair"></button>
+            <button class="bottom bottom-check"></button>
           </div>
          </nav>
       </div>
      </header>
      <main class="main">
-      <div class="main__aside-nav">
+      <div class="aside-nav">
       <nav class="nav">
         <div class="nav__aside-container">
           <div class="nav__wrapper">
@@ -184,11 +184,11 @@
               <ul class="nav__services-menu">
                 <li class="nav__services-menu__item">
                     <span class="nav__services-menu__text">Оставить заявку</span>
-                    <button class="bottom-round repair clous"></button>
+                    <button class="bottom bottom-repair"></button>
                 </li>
                 <li class="nav__services-menu__item">
                     <span class="nav__services-menu__text">Статус ремонта</span>
-                    <button class="bottom-round nav__services-menu__button check"></button>
+                    <button class="bottom bottom-check"></button>
                 </li>
             </ul>
             </div>
@@ -212,19 +212,20 @@
               Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
               официальной гарантией производителя.
           </p>
-          <p class="article__text article__text_tablet">
+          <p class="article__text">
               Мы успешно работаем с 1992 года и заслужили репутацию надежного
               партнера, что подтверждает большое количество постоянных клиентов.
               Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
               очередь, советуют нас родным и близким.
           </p>
-          <p class="article__text article__text_desktop">
+          <p class="article__text">
             У нас есть все необходимые запчасти и оборудование для ремонта ноутбуков Dell любой сложности.
-            <p class="article__text ">В процессе ремонта мы используем только качественные, оригинальные запасные части.</p>
-        </p>
+          </p>
+          <p class="article__text ">В процессе ремонта мы используем только качественные, оригинальные запасные части.
+          </p>
       </div>
       <div class="article__transparent-block"></div>
-      <button class="article__button ">Читать далее</button>
+      <button class="article__button">Читать далее</button>
      </div>
       <img class="article__img" src="./img/cps.jpg" alt="cps"/>
      </article>
